@@ -78,7 +78,7 @@ class HomePageState extends State<HomePage>{
                     keyboardType: TextInputType.number,
                     controller: t1,
                     decoration: new InputDecoration(
-                        hintText: "Enter the number 1"
+                        hintText: "Enter number 1"
                     ),
 
 
@@ -91,7 +91,7 @@ class HomePageState extends State<HomePage>{
                     keyboardType: TextInputType.number,
                     controller: t2,
                     decoration: new InputDecoration(
-                        hintText: "Enter the number 2"
+                        hintText: "Enter number 2"
                     ),
 
 
