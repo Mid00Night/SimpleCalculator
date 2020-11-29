@@ -62,6 +62,7 @@ class HomePageState extends State<HomePage>{
       appBar: new AppBar(
 
         title: new Text('Simple Calculator'),
+
         centerTitle: true,
 
       ),
@@ -108,14 +109,14 @@ class HomePageState extends State<HomePage>{
               children: <Widget>[
                 new MaterialButton(
                   child: new Text("+" , style: new TextStyle(
-                      fontSize: 25)),
+                      fontSize: 25, color: Colors.white)),
                   color: Colors.brown[300],
                     onPressed: () => {Add()}
 
                 ),
                 new MaterialButton(
                     child: new Text("-", style: new TextStyle(
-                      fontSize: 30
+                      fontSize: 30, color: Colors.white
                     ),),
 
                     color: Colors.brown[300],
@@ -130,14 +131,14 @@ class HomePageState extends State<HomePage>{
 
                 new MaterialButton(
                     child: new Text("x" , style: new TextStyle(
-                        fontSize: 25)),
+                        fontSize: 25, color: Colors.white)),
                     color: Colors.brown[300],
                     onPressed: () => {Mult()}
                 ),
 
                 new MaterialButton(
                     child: new Text("÷" , style: new TextStyle(
-                        fontSize: 25)),
+                        fontSize: 25 , color: Colors.white)),
                     color: Colors.brown[300],
                     onPressed: () => {Div()}
                 ),
@@ -148,7 +149,9 @@ class HomePageState extends State<HomePage>{
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 new MaterialButton(
-                    child: new Text("Reset"),
+                    child: new Text("Reset" , style: new TextStyle(
+                      color: Colors.white
+                    ),),
                     color: Colors.brown[300],
                     onPressed: () => {Reset()},
                   shape: CircleBorder(),
