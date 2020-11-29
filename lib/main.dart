@@ -12,7 +12,7 @@ class MyApp  extends StatelessWidget{
             FocusScope.of(context).requestFocus(new FocusNode());
          },
          child:  MaterialApp(
-
+           debugShowCheckedModeBanner: false,
            title: "Simple Calculator",
            theme: new ThemeData(
                primarySwatch: Colors.brown
